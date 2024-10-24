@@ -12,4 +12,4 @@ I had problems with pushing and committing my code but with some assistance from
 It was an amazing and educative experience.
 ## Expanding simple storage with solidity concepts
 I started by adding  the variables and data types given to us in the project. which laid a foundation by including essential data types such as arrays, structs and enums which will be used in my smart contract afterwards I compiled and deployed my contract to ensure that everything was going on smoothly
-*Implementing solidity functions,conditionals and loops*
+## Implementing solidity functions,conditionals and loops
