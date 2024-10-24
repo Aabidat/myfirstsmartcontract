@@ -10,3 +10,6 @@ I navigated to the "Deploy & Run Transactions" tab and clicked on deploy I teste
 ## My challenges
 I had problems with pushing and committing my code but with some assistance from some class mates from Hackerboost and watching YouTube tutorials it was no longer a worry.
 It was an amazing and educative experience.
+## Expanding simple storage with solidity concepts
+I started by adding  the variables and data types given to us in the project. which laid a foundation by including essential data types such as arrays, structs and enums which will be used in my smart contract afterwards I compiled and deployed my contract to ensure that everything was going on smoothly
+**Implementind solidity functions,conditionals and loops**
