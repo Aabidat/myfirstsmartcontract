@@ -6,6 +6,25 @@
 	"output": {
 		"abi": [
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "newNumber",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "updatedBy",
+						"type": "address"
+					}
+				],
+				"name": "NumberUpdated",
+				"type": "event"
+			},
+			{
 				"inputs": [],
 				"name": "activatecontract",
 				"outputs": [],
@@ -31,8 +50,45 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_favoriteNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "addPersonstringname",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "callInternalFunction",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_inputString",
+						"type": "string"
+					}
+				],
+				"name": "concatenateString",
 				"outputs": [
 					{
 						"internalType": "string",
@@ -61,6 +117,19 @@
 					}
 				],
 				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "favoriteNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -130,6 +199,25 @@
 			{
 				"inputs": [
 					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "nameToFavoriteNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
@@ -172,6 +260,19 @@
 						"type": "uint256"
 					}
 				],
+				"name": "store",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_favoriteNumber",
+						"type": "uint256"
+					}
+				],
 				"name": "storeNumber",
 				"outputs": [],
 				"stateMutability": "nonpayable",
@@ -201,6 +302,25 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_newNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "updateNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -232,11 +352,11 @@
 	},
 	"sources": {
 		"simplestorage.sol": {
-			"keccak256": "0x6176b6794e8f6c9303e6e33dd021dbcc5e377c9dc7bde702382c5c116255e600",
+			"keccak256": "0xf3198196b61272af201cb8b3d91b71200595c7bf9db1eae5224b45c03333ac27",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a37f7ed87cb3f4192461a5d70384d9c999a09a053ecf170c9eeaa2a009d19f72",
-				"dweb:/ipfs/QmQFgAYh2rMerZCPgwKeQHxu8KojsCrFSwTQNADmqsQxM2"
+				"bzz-raw://a211336678ca4d24683065edab0651c662fc02f61a60c54fc00113d057f2e447",
+				"dweb:/ipfs/QmVCRghipAkPqa7XUWST4WeaSHrmrM3wUdw8dRVLrYb5n5"
 			]
 		}
 	},
