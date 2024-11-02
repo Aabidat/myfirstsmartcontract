@@ -12,3 +12,4 @@ I had problems with pushing and committing my code but with some assistance from
 It was an amazing and educative experience.
 continuing with my smart contract,
 ## continuing with my smart contract, I implemented mappings,added and emitted events and utilized storage, memory and celldata
+I created mappings to store names and their correspondig favorite numbers and modified the add person function to store vdata in the mapping.Then I created event called numberUpdated event that logs when favorite number is updated and modified the storeNumber function to store data in the mapping.
