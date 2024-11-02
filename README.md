@@ -11,4 +11,4 @@ I navigated to the "Deploy & Run Transactions" tab and clicked on deploy I teste
 I had problems with pushing and committing my code but with some assistance from some class mates from Hackerboost and watching YouTube tutorials it was no longer a worry.
 It was an amazing and educative experience.
 continuing with my smart contract,
-## I implemented mappings,added and emitted events and utilized storage, memory and celldata
+## continuing with my smart contract, I implemented mappings,added and emitted events and utilized storage, memory and celldata
