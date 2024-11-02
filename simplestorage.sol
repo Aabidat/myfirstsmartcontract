@@ -2,7 +2,10 @@
 pragma solidity ^0.8.25;
 
 contract simplestorage {
-    uint256 private favoriteNumber; //  stores the user's favorite number
+    uint256 private myfavoriteNumber; //  stores the user's favorite number
+
+    // Define an event that logs the updated favorite number
+    event NumberUpdated(uint256 newNumber, address updatedBy);
 
     uint256[] public fovoriteNumbers; // Dymamic array to store multiple favorite numbers
 
@@ -24,6 +27,9 @@ contract simplestorage {
 
     function storeNumber(uint256 _favoriteNumber) public {
         favoriteNumber = _favoriteNumber;
+
+         // Emit the event when the number is updated
+        emit NumberUpdated(_favoriteNumber, msg.sender);
     }
 
     function getFavoriteNumber() public view returns (uint256) {
@@ -78,4 +84,33 @@ contract simplestorage {
     function isActive() public view returns (bool) {
         return state == contractstate.Active;
     }
+
+    mapping(string => uint256) public nameToFavoriteNumber;
+
+    function addPersonstringname(string memory _name, uint256 _favoriteNumber) public {
+    nameToFavoriteNumber[_name] = _favoriteNumber;
+    }
+
+    // State variable stored in storage
+    uint256 public favoriteNumber;
+
+    // Function to store a number in the storage variable
+    function store(uint256 _favoriteNumber) public {
+        favoriteNumber = _favoriteNumber;
+    }
+
+    // Function that uses a memory variable
+    function updateNumber(uint256 _newNumber) public pure  returns (uint256) {
+        // Memory variable is used for temporary calculations
+        uint256 tempNumber = _newNumber + 5;
+        return tempNumber;
+    }
+
+    // Function that uses a calldata variable
+    function concatenateString(string calldata _inputString) public pure returns (string memory) {
+        // Memory variable to store the concatenated result
+        string memory newString = string(abi.encodePacked(_inputString, " is awesome!"));
+        return newString;
+    }    
+
 }
